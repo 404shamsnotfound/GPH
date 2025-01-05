@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+    <!-- Logo and Title -->
+    <div class="navbar-title">
+        <img src="/logo.png" alt="Logo" class="navbar-logo" />
+    </div>
+
+    <!-- Links on the Right -->
+    <div class="navbar">
+        <div class="navbar-links">
+            <button mat-button>خدماتي</button>
+            <button mat-button>تصاريحي</button>
+            <button mat-button>معاملاتي</button>
+        </div>
+
+        <div class="navbar-links">
+            <button mat-button [matMenuTriggerFor]="menu">EN</button>
+            <mat-menu #menu="matMenu" class="menu">
+                <button mat-menu-item>English</button>
+                <button mat-menu-item>العربيه</button>
+            </mat-menu>
+
+            <button mat-button><img src="/Leading Icon.png" alt="Logo" class="search" /></button>
+            <button mat-button [matMenuTriggerFor]="menu2"><img src="/elements.png" alt="Logo" class="search" /></button>
+            <mat-menu #menu2="matMenu" class="menu">
+                <button mat-menu-item>notifications</button>
+                <button mat-menu-item>notifications</button>
+            </mat-menu>
+            <button mat-button><img src="/2.png" alt="Logo" class="search" /></button>
+            <button mat-button><img src="/1.png" alt="Logo" class="search" /></button>
+        </div>
+
+    </div>
+</mat-toolbar>
+<div class="image-container">
+    <!-- <img src="/background-header.png" alt="Image 2" class="image" /> -->
+    <img src="/Pattern-header.png" alt="Image 3" class="image" />
+</div>
+<app-breadcrumbs [breadcrumbs]="breadcrumbList"></app-breadcrumbs>
+
+<app-page-title [title]="pageTitle.title" [desc]="pageTitle.desc"></app-page-title>

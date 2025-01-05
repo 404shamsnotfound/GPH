@@ -1,0 +1,29 @@
+.breadcrumbs {
+    font-size: 16px;
+}
+
+.breadcrumb-link {
+    text-decoration: none;
+    color: white;
+}
+
+.breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    color: white;
+    margin: 0 5px;
+}
+
+.mat-toolbar {
+    background: #ffffff00;
+    position: absolute;
+    top: 92px;
+    right: 34px;
+    font-family: "IBM Plex Sans Arabic", serif;
+    font-weight: 400;
+}
+.last-breadcrumbs{
+    color: #9DA4AE;
+}

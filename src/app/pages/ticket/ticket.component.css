@@ -1,0 +1,64 @@
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex: auto;
+}
+
+.navbar-title {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.navbar-logo {
+    height: 75px;
+    margin-left: 32px;
+}
+
+.navbar-links {
+    button {
+        font-weight: bold;
+        margin-left: 15px;
+        /* Space between buttons */
+    }
+}
+
+.mat-toolbar {
+    background: #ffffff;
+    height: 75px;
+}
+.mat-mdc-button{
+    font-family: "IBM Plex Sans Arabic", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #000 !important;
+}
+  
+  .image-container {
+    height: 420px;
+    background-image: 
+      linear-gradient(270deg, #1F2A37 0%, rgba(37, 52, 63, 0) 100%),  /* First gradient */
+      linear-gradient(90deg, #4A4337 0%, #1F2A37 40%),                  /* Second gradient */
+      url('/Pattern-header.png');                                       /* Background image */
+    
+    background-size: cover;  /* Ensures the image and gradients cover the container */
+    background-position: center; /* Centers the image and gradients */
+    background-blend-mode: overlay; /* Optional: To blend the gradients with the image */
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensure the image covers the container */
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  }
+  ::ng-deep .mat-mdc-menu-panel{
+    background-color: #25343F !important;
+    text-align-last: center;
+    font-family: "IBM Plex Sans Arabic", serif;
+  }
+  .search{
+    width: 26px;
+    padding-top: 5px;
+  }

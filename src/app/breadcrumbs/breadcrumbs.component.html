@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" class="breadcrumbs">
+    <ng-container *ngFor="let breadcrumb of breadcrumbs; let last = last">
+        <a *ngIf="!last" [routerLink]="['/ticket']" class="breadcrumb-link">
+            {{ breadcrumb.label }}
+        </a>
+        <span *ngIf="!last" class="separator"> > </span>
+        <span *ngIf="last" class="last-breadcrumbs">{{ breadcrumb.label }}</span>
+    </ng-container>
+</mat-toolbar>
