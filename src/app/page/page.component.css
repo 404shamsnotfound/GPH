@@ -1,0 +1,35 @@
+.page {
+    position: absolute;
+    top: 365px;
+    width: 1120px;
+    height: 851px;
+    padding: 48px 64px 48px 64px;
+    justify-self: anchor-center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #D2D6DB;
+}
+.page-content{
+    width: 992px;
+    height: 424px;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 16px;
+    border: 1px solid var(--Border-border-neutral-primary, #D2D6DB);
+}
+
+.title{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: fit-content;
+    
+}
+  /* Row Container */
+  .row {
+    display: flex;                  /* Aligns child elements in a row */
+    gap: 25px;                       /* Adds space between input fields */
+  }
